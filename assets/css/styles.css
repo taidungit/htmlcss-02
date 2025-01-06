@@ -29,6 +29,7 @@ a {
     font-family: "Poppins";
 }
 .btn:hover{
+    cursor: pointer;
     opacity: 0.8;
 }
 .content {
@@ -36,6 +37,15 @@ a {
     margin-left: auto;
     margin-right: auto;
     max-width: calc(100% - 48px);
+}
+.line-clamp{
+    display:-webkit-box;
+    -webkit-line-clamp: var(--line-clamp,1);
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+.line-clamp.line-2{
+    --line-clamp:2; 
 }
 
 /* Header */
@@ -256,7 +266,7 @@ header .nav a {
     font-weight: 700;
     line-height: 54px; /* 122.727% */
 }
-/* Popular */
+/* ==========Popular=========== */
 .popular-top{
     display: flex;
     justify-content: space-between;
@@ -302,4 +312,91 @@ line-height: 1.66667; /* 166.667% */
 .button-control:hover{
     background:var(--primary-color);
     color:white;
+}
+.popular .list-course{
+    display: flex;
+    padding-top: 55px;
+    gap:30px;
+}
+.popular .item-course{
+    flex:1;
+}
+.list-course .info{
+    padding:16px 22px 22px;
+}
+.list-course .foot,
+.list-course .head{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.list-course .head{
+    color: #171100;
+font-family: Poppins;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.6667; /* 166.667% */
+}
+.list-course .head .num{
+    color: var(--primary-color);
+font-family: Poppins;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.75; /* 175% */
+}
+.list-course .desc{
+    margin-top: 6px;
+    color: #5F5B53;
+font-family: Poppins;
+font-size: 1.4rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.85714; /* 185.714% */
+}
+.list-course .foot{
+    margin-top: 12px;
+}
+.list-course .foot .price{
+    color: #171100;
+font-family: Poppins;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.667; /* 166.667% */
+}
+.item-course{
+    border-radius: 12px;
+border: 1px solid #E2DFDA;
+background: #FFF;
+}
+.list-course .thumb{
+    margin-left: -0.75px;
+    margin-top: -0.75px;
+    width:calc(100% + 1.5px);
+}
+.btn-book:hover{
+    background-color:var(--primary-color);
+}
+.btn-book{
+    border:none;
+}
+.list-course .item-course:hover{
+    border:none;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+.list-course .title a{
+    padding-right:10px;
+    color: #171100;
+font-family: Poppins;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: 1.667; /* 166.667% */
+}
+.list-course .rating{
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
